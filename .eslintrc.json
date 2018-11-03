@@ -1,0 +1,574 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "modules": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "accessor-pairs": "error",
+        "array-bracket-newline": "error",
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "array-callback-return": "error",
+        "array-element-newline": [
+            "error",
+            {
+                "multiline": true,
+                "minItems": 5
+            }
+        ],
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "arrow-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
+        "block-scoped-var": "error",
+        "block-spacing": [
+            "error",
+            "never"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "callback-return": "off",
+        "camelcase": [
+            "error",
+            {
+                "properties": "always"
+            }
+        ],
+        "capitalized-comments": "off",
+        "class-methods-use-this": "off",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "complexity": [
+            "error",
+            {
+                "max": 20
+            }
+        ],
+        "computed-property-spacing": [
+            "error",
+            "never"
+        ],
+        "consistent-return": "error",
+        "consistent-this": [
+            "error",
+            "self"
+        ],
+        "constructor-super": "error",
+        "curly": [
+            "error",
+            "multi-line",
+            "consistent"
+        ],
+        "default-case": "off",
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "dot-notation": "error",
+        "eol-last": "error",
+        "eqeqeq": "error",
+        "for-direction": "error",
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "func-name-matching": "off",
+        "func-names": "off",
+        "func-style": [
+            "error",
+            "declaration",
+            {
+                "allowArrowFunctions": true
+            }
+        ],
+        "generator-star-spacing": [
+            "error",
+            {
+                "after": false,
+                "before": true
+            }
+        ],
+        "getter-return": "error",
+        "global-require": "off",
+        "guard-for-in": "error",
+        "handle-callback-err": "off",
+        "id-blacklist": "off",
+        "id-length": [
+            "error",
+            {
+                "exceptions": [
+                    "i",
+                    "j"
+                ],
+                "max": 50,
+                "min": 2
+            }
+        ],
+        "id-match": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "init-declarations": [
+            "error",
+            "always"
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-double"
+        ],
+        "key-spacing": "error",
+        "keyword-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
+        "line-comment-position": [
+            "error",
+            {
+                "position": "above"
+            }
+        ],
+        "linebreak-style": "off",
+        "lines-around-comment": [
+            "error",
+            {
+                "beforeBlockComment": true,
+                "ignorePattern": "@"
+            }
+        ],
+        "max-depth": [
+            "error",
+            4
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "tabWidth": 4
+            }
+        ],
+        "max-lines": [
+            "error",
+            {
+                "max": 300,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ],
+        "max-nested-callbacks": ["error", 4],
+        "max-params": ["error", 8],
+        "max-statements": ["error", {"max": 30}],
+        "max-statements-per-line": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "multiline-ternary": "off",
+        "new-cap": [
+            "error",
+            {
+                "newIsCap": true,
+                "capIsNew": true,
+                "properties": true
+            }
+        ],
+        "new-parens": "error",
+        "newline-per-chained-call": "off",
+        "nonblock-statement-body-position": ["error", "beside"],
+        "no-alert": "error",
+        "no-array-constructor": "error",
+        "no-await-in-loop": "error",
+        "no-bitwise": "error",
+        "no-buffer-constructor": "error",
+        "no-caller": "error",
+        "no-case-declarations": "error",
+        "no-catch-shadow": "off",
+        "no-class-assign": "error",
+        "no-compare-neg-zero": "error",
+        "no-cond-assign": "error",
+        "no-confusing-arrow": "off",
+        "no-console": "error",
+        "no-const-assign": "error",
+        "no-constant-condition": "error",
+        "no-continue": "error",
+        "no-control-regex": "error",
+        "no-debugger": "error",
+        "no-delete-var": "error",
+        "no-div-regex": "off",
+        "no-dupe-args": "error",
+        "no-dupe-class-members": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-duplicate-imports": "error",
+        "no-else-return": "error",
+        "no-empty": "error",
+        "no-empty-character-class": "error",
+        "no-empty-function": [
+            "error",
+            {
+                "allow": [
+                    "arrowFunctions"
+                ]
+            }
+        ],
+        "no-empty-pattern": "error",
+        "no-eq-null": "error",
+        "no-eval": "error",
+        "no-ex-assign": "error",
+        "no-extend-native": "error",
+        "no-extra-bind": "error",
+        "no-extra-boolean-cast": "error",
+        "no-extra-label": "error",
+        "no-extra-parens": [
+            "error",
+            "all",
+            {
+                "returnAssign": false
+            }
+        ],
+        "no-extra-semi": "error",
+        "no-fallthrough": "off",
+        "no-floating-decimal": "error",
+        "no-func-assign": "error",
+        "no-global-assign": "error",
+        "no-implicit-coercion": "error",
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-inline-comments": "error",
+        "no-inner-declarations": "error",
+        "no-invalid-regexp": "error",
+        "no-invalid-this": "error",
+        "no-irregular-whitespace": "error",
+        "no-iterator": "error",
+        "no-label-var": "error",
+        "no-labels": "error",
+        "no-lone-blocks": "error",
+        "no-lonely-if": "error",
+        "no-loop-func": "error",
+        "no-magic-numbers": [
+            "error",
+            {
+                "enforceConst": true,
+                "ignore": [
+                    -1,
+                    0,
+                    1,
+                    2
+                ],
+                "ignoreArrayIndexes": true
+            }
+        ],
+        "no-mixed-operators": "off",
+        "no-mixed-requires": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multi-assign": "error",
+        "no-multi-spaces": "error",
+        "no-multi-str": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 2,
+                "maxEOF": 1
+            }
+        ],
+        "no-negated-condition": "error",
+        "no-nested-ternary": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-object": "error",
+        "no-new-require": "error",
+        "no-new-symbol": "error",
+        "no-new-wrappers": "error",
+        "no-obj-calls": "error",
+        "no-octal": "error",
+        "no-octal-escape": "error",
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "no-path-concat": "off",
+        "no-plusplus": "off",
+        "no-process-env": "off",
+        "no-process-exit": "off",
+        "no-proto": "error",
+        "no-prototype-builtins": "off",
+        "no-redeclare": "error",
+        "no-regex-spaces": "error",
+        "no-restricted-globals": "off",
+        "no-restricted-imports": "off",
+        "no-restricted-modules": "off",
+        "no-restricted-properties": "off",
+        "no-restricted-syntax": "off",
+        "no-return-assign": [
+            "error",
+            "except-parens"
+        ],
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-self-assign": "error",
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-shadow": "error",
+        "no-shadow-restricted-names": "error",
+        "no-sparse-arrays": "error",
+        "no-sync": "off",
+        "no-tabs": "error",
+        "no-template-curly-in-string": "error",
+        "no-ternary": "off",
+        "no-this-before-super": "error",
+        "no-throw-literal": "error",
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "no-undef": "error",
+        "no-undef-init": "error",
+        "no-undefined": "error",
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allowAfterSuper": true,
+                "allowAfterThis": true
+            }
+        ],
+        "no-unexpected-multiline": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unneeded-ternary": "error",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "error",
+        "no-unsafe-negation": "error",
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": false,
+                "allowTernary": false
+            }
+        ],
+        "no-unused-labels": "error",
+        "no-unused-vars": "error",
+        "no-use-before-define": "error",
+        "no-useless-call": "error",
+        "no-useless-computed-key": "error",
+        "no-useless-concat": "error",
+        "no-useless-constructor": "error",
+        "no-useless-escape": "error",
+        "no-useless-rename": [
+            "error",
+            {
+                "ignoreDestructuring": false,
+                "ignoreExport": false,
+                "ignoreImport": false
+            }
+        ],
+        "no-useless-return": "error",
+        "no-var": "error",
+        "no-void": "error",
+        "no-warning-comments": "off",
+        "no-whitespace-before-property": "error",
+        "no-with": "error",
+        "object-curly-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "object-property-newline": "off",
+        "object-shorthand": "error",
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "one-var-declaration-per-line": [
+            "error",
+            "always"
+        ],
+        "operator-assignment": [
+            "error",
+            "always"
+        ],
+        "operator-linebreak": [
+            "error",
+            "before"
+        ],
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "padding-line-between-statements": "off",
+        "prefer-arrow-callback": "error",
+        "prefer-const": "error",
+        "prefer-destructuring":  ["error", {"object": true, "array": false}],
+        "prefer-numeric-literals": "error",
+        "prefer-promise-reject-errors": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "prefer-template": "error",
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "radix": [
+            "error",
+            "as-needed"
+        ],
+        "require-jsdoc": [
+            "error",
+            {
+                "require": {
+                    "ClassDeclaration": false,
+                    "FunctionDeclaration": false,
+                    "MethodDefinition": false
+                }
+            }
+        ],
+        "require-await": "error",
+        "require-yield": "error",
+        "rest-spread-spacing": [
+            "error",
+            "never"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "semi-style": ["error", "last"],
+        "sort-imports": "off",
+        "sort-keys": "off",
+        "sort-vars": "off",
+        "space-before-blocks": [
+            "error",
+            "always"
+        ],
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "space-infix-ops": "error",
+        "space-unary-ops": [
+            "error",
+            {
+                "nonwords": false,
+                "words": true
+            }
+        ],
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "line": {
+                    "markers": [
+                        "/"
+                    ]
+                }
+            }
+        ],
+        "strict": [
+            "error",
+            "safe"
+        ],
+        "switch-colon-spacing": "error",
+        "symbol-description": "off",
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "template-tag-spacing": "error",
+        "unicode-bom": "off",
+        "use-isnan": "error",
+        "valid-jsdoc": [
+            "error",
+            {
+                "requireParamDescription": false,
+                "requireReturnDescription": false
+            }
+        ],
+        "valid-typeof": "error",
+        "vars-on-top": "error",
+        "wrap-iife": [
+            "error",
+            "outside"
+        ],
+        "wrap-regex": "off",
+        "yield-star-spacing": [
+            "error",
+            {
+                "after": false,
+                "before": true
+            }
+        ],
+        "yoda": [
+            "error",
+            "never",
+            {
+                "exceptRange": true
+            }
+        ]
+    }
+}

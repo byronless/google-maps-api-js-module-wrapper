@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style type="text/css">
+        html, body, #map-view {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Verdana, serif;
+        }
+    </style>
+    <script type="module">
+        import {loadGoogleMaps, google} from './modules/googeMapsLoader.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadGoogleMaps('AIzaSyCP3BMIPLiwVh3J2deo1K6pnwiTLSHzIpk').then(() => {
+                const mapCfg = {
+                    zoom: 4,
+                    center: {
+                        lat: 51.48,
+                        lng: 0
+                    }
+                };
+
+                new google.maps.Map(document.getElementById('map-view'), mapCfg);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="map-view" ></div>
+</body>
+</html>
