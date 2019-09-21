@@ -4,7 +4,7 @@
 ```JavaScript
 import {loadGoogleMaps} from './modules/googeMapsLoader.js';
 
- loadGoogleMaps('AIzaSyCP3BMIPLiwVh3J2deo1K6pnwiTLSHzIpk').then(() => {
+ loadGoogleMaps('PLACE-API-KEY-HERE').then(() => {
     // Code will run after map API loading
  });
  ```

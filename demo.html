@@ -20,7 +20,8 @@
         import {loadGoogleMaps, google} from './modules/googeMapsLoader.js';
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadGoogleMaps('AIzaSyCP3BMIPLiwVh3J2deo1K6pnwiTLSHzIpk').then(() => {
+            const apiKey = window.prompt('Enter Google Map API key');
+            loadGoogleMaps(apiKey).then(() => {
                 const mapCfg = {
                     zoom: 4,
                     center: {
